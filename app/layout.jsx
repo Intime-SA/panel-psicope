@@ -3,6 +3,13 @@ export const metadata = {
   description: "Panel de gestión del consultorio",
 };
 
+// Viewport responsive para uso en celular (consultas rápidas).
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
