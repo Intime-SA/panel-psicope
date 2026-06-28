@@ -930,8 +930,7 @@ body.view-hoy .anotador-panel { display: flex !important; }
     </nav>
     <div class="sidebar-footer">
       <button class="undo-btn" id="undo-btn" data-action="undo" disabled>↶ <span id="undo-label">Nada que deshacer</span></button>
-      Datos en este navegador.<br>
-      Hacé backup periódico.
+      Datos sincronizados en la nube.
     </div>
   </aside>
   <main class="main" id="main"></main>
@@ -3167,7 +3166,7 @@ function viewBackup() {
   const size = (JSON.stringify(state).length / 1024).toFixed(1);
   return `
     <h2 class="page-title">Backup</h2>
-    <p class="page-sub">Tus datos se guardan en este navegador. Hacé backup periódico (sugerido: cada viernes) para no depender solo del browser.</p>
+    <p class="page-sub">Tus datos se sincronizan en la nube. Podés exportar un backup en JSON cuando quieras tener una copia propia.</p>
     <div class="card">
       <h3 class="card-title">Estado actual</h3>
       <div class="kpi-grid">
@@ -3189,7 +3188,7 @@ function viewBackup() {
     <div class="card">
       <h3 class="card-title">Datos de prueba / reset</h3>
       <button class="btn btn-danger-ghost btn-sm" data-action="reset-all">Borrar todos los datos y empezar de cero</button>
-      <p class="text-muted" style="font-size:12px;margin-top:8px;">Esto borra todo lo cargado en este navegador. Hacé backup antes.</p>
+      <p class="text-muted" style="font-size:12px;margin-top:8px;">Esto borra todos tus datos de la nube. Exportá un backup antes.</p>
     </div>
   `;
 }
